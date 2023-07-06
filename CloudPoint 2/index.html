@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>VRP</title>
+  <link rel="stylesheet" href="GOOGLE-MAP.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bree+Serif|Jacques+Francois+Shadow|Libre+Baskerville" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByoJxUGacz3wWhO5u93UkEuqOV_dDmTYA&callback=initMapqq&libraries=places"></script>
+</head>
+
+<body>
+  <div id="box">
+    <div id="heading">
+      <h1 style="text-align: center;font-family: 'Times New Roman', cursive;font-size:40px;">VRP</h1>
+    </div>
+    <div id="map"></div>
+    <div id="marker-info">
+      <h1>Marker Info</h1>
+      <form id="marker-form">
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+          <option value="1">low</option>
+          <option value="2">medium</option>
+          <option value="3">high</option>
+        </select><br>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" min="1" max="20"><br><br>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    <div id="instruct">
+      <h1>INSTRUCTIONS:</h1>
+      <!-- <button id="btn2" style="font-family: sans-serif;">DELETE ALL WINDOWS</button><br><br> -->
+      <button id="btn1" style="font-family: sans-serif;">DELETE ALL POINTERS</button><br><br>
+      <button id="routebtn" onclick="  mapLocation()">Show map</button><br><br>
+      <button id="routebtnF" onclick="  zhixian()">Show map Straight line </button>
+
+    <!-- </div>
+    <div id="route-info">
+      <h1>Route Info</h1>
+      <button id="show-route" style="font-family: sans-serif;">Show Route</button>
+    </div>
+  </div> -->
+
+  <script src="GOOGLE-MAP.js"></script>
+
+
+
+
+  
+</body>
+
+</html>

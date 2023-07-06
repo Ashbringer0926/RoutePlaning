@@ -1,0 +1,52 @@
+#map {
+    height: 400px;
+    width: 80%;
+    border-radius: 0;
+  }
+  
+
+
+#heading {
+    width: 100%;
+    height: 50px;
+}
+
+#box {
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+#instruct {
+    /* height: 500px; */
+    width: 50%;
+    /* text-align: center;
+    border-radius: 0;
+    background-color: white;
+    font-size: 14px; */
+    /* float: right; 设置浮动属性为右侧 */
+  }
+  
+#marker-info{
+    /* height: 500px; */
+    width: 50%;
+    /* text-align: center;
+    border-radius: 0;
+    background-color: white;
+    font-size: 14px; */
+    /* float: right; 设置浮动属性为右侧 */
+}
+
+
+@media screen and (max-width: 700px) {
+    #instruct,
+    #marker-info {
+      width: 100%;
+    }
+  }
